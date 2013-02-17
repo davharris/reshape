@@ -4,7 +4,7 @@
 \usage{
   \method{melt}{data.frame} (data, id.vars, measure.vars,
     variable.name = "variable", ..., na.rm = FALSE,
-    value.name = "value")
+    value.name = "value", as.is = TRUE)
 }
 \arguments{
   \item{data}{data frame to melt}
@@ -25,6 +25,9 @@
   \item{na.rm}{Should NA values be removed from the data
   set? This will convert explicit missings to implicit
   missings.}
+
+  \item{as.is}{should strings be left as strings or
+  converted to factors?}
 
   \item{...}{further arguments passed to or from other
   methods.}

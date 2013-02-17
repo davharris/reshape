@@ -4,7 +4,7 @@
 \usage{
   \method{melt}{array} (data,
     varnames = names(dimnames(data)), ..., na.rm = FALSE,
-    value.name = "value")
+    value.name = "value", as.is = TRUE)
 }
 \arguments{
   \item{data}{array to melt}
@@ -20,6 +20,9 @@
   \item{na.rm}{Should NA values be removed from the data
   set? This will convert explicit missings to implicit
   missings.}
+
+  \item{as.is}{should strings be left as strings or
+  converted to factors?}
 }
 \description{
   This code is conceptually similar to
